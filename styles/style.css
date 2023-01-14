@@ -187,6 +187,13 @@ img {
   flex-direction: column;
   justify-content: center;
 }
+.facts-card h4 {
+  font-size: 2rem;
+}
+.facts-card span {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
 
 /* Our Sponsors Section  */
 .sponsors-section {
@@ -198,12 +205,28 @@ img {
 }
 .sponsors-section p {
   max-width: 550px;
-  margin: 30px auto;
+  margin: 40px auto;
 }
 
 .brands-logo {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  flex-wrap: wrap;
+  filter: grayscale(100%);
 }
 
+/* footer section here  */
+footer {
+  background-color: var(--main-bg-color);
+}
+.footer {
+  height: 200px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* Responsive Media Query Here  */
 
 @media only screen and (max-width: 576px) {
