@@ -28,6 +28,10 @@ a {
   text-decoration: none;
   color: var(--dark-color);
 }
+p {
+  font-size: 20px;
+  margin: 30px 0;
+}
 img {
   max-width: 100%;
 }
@@ -73,15 +77,32 @@ img {
   max-width: 862px;
   margin: 50px 0;
 }
-.banner-text p {
-  font-size: 20px;
-  margin: 30px 0;
-}
+
 .top-header h1 {
   font-size: 64px;
 }
 .banner-img {
   padding-bottom: 50px;
+}
+/* Quick list of Our Features  */
+.features-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 90px 0;
+}
+
+.feature-img-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(342px, 342px));
+  gap: 25px;
+}
+.featuer-img-grid img {
+}
+.featuer-text-section {
+}
+.featuer-text-section h1 {
+  font-size: 45px;
 }
 
 /* Responsive Media Query Here  */
