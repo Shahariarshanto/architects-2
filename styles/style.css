@@ -44,6 +44,7 @@ img {
   background-color: var(--primary-color);
   border: none;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 /* ain Navigation Section Here  */
@@ -234,6 +235,7 @@ img {
   color: var(--primary-color);
   border-radius: 7px;
   box-shadow: var(--box-shadow);
+  cursor: pointer;
 }
 
 .facade-img {
