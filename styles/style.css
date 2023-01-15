@@ -206,9 +206,8 @@ img {
 }
 .facts-card:hover {
   background-color: rgba(255, 143, 14, 0.2);
-  transform: translate(-0.8rem, -0.4rem);
-
-  transition: all 0.5s ease-out;
+  transform: scale(1.1);
+  transition: transform 1.5s ease-in-out;
 }
 
 /* Get Started With Our Design  */
@@ -236,10 +235,7 @@ img {
   border-radius: 7px;
   box-shadow: var(--box-shadow);
 }
-.facade-btn:hover,
-.btn:hover {
-  transform: scale(1) rotate(-1deg);
-}
+
 .facade-img {
   width: 45%;
 }
