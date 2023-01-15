@@ -1,5 +1,5 @@
 /* Google Fonts Link */
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Work+Sans:wght@400;700&display=swap");
 
 /* Common Styles Here  */
 * {
@@ -58,7 +58,13 @@ img {
   min-height: 100px;
 }
 .logo {
+  font-family: "Pacifico", cursive;
+  font-size: 30px;
 }
+.logo span {
+  color: var(--primary-color);
+}
+
 .main-nav ul {
   display: flex;
   justify-content: space-between;
@@ -66,6 +72,9 @@ img {
 }
 .main-nav a {
   font-size: 20px;
+}
+.main-nav a:hover {
+  color: var(--primary-color);
 }
 /* Top Header Section  */
 .top-header {
@@ -95,7 +104,7 @@ img {
 
 .feature-img-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(342px, 342px));
+  grid-template-columns: repeat(2, minmax(250px, 342px));
   gap: 25px;
 }
 .feature-text-section {
@@ -178,11 +187,12 @@ img {
   margin: 50px 0;
 }
 .facts-card {
-  border: 2px solid orange;
+  border: 2px solid var(--primary-color);
   min-width: 250px;
   display: flex;
   gap: 1rem;
   min-height: 238px;
+  border-radius: 3px;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -193,6 +203,45 @@ img {
 .facts-card span {
   font-size: 1.3rem;
   font-weight: 700;
+}
+.facts-card:hover {
+  background-color: rgba(255, 143, 14, 0.2);
+  transform: translate(-0.8rem, -0.4rem);
+
+  transition: all 0.5s ease-out;
+}
+
+/* Get Started With Our Design  */
+
+.facade-section {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: #fff4e7;
+  padding: 20px 15px;
+}
+.facade-info {
+  max-width: 50%;
+}
+.facade-info h1 {
+  font-size: 2.5rem;
+}
+.facade-btn {
+  border: none;
+  padding: 14px 20px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: var(--main-bg-color);
+  color: var(--primary-color);
+  border-radius: 7px;
+  box-shadow: var(--box-shadow);
+}
+.facade-btn:hover,
+.btn:hover {
+  transform: scale(1) rotate(-1deg);
+}
+.facade-img {
+  width: 45%;
 }
 
 /* Our Sponsors Section  */
@@ -259,6 +308,7 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100%;
   }
 
   /* enjoyable features details section  */
@@ -284,6 +334,17 @@ footer {
   }
   .experience-text small {
     font-size: 1rem;
+  }
+  /* Get Started With Our Design  */
+  .facade-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .facade-info {
+    max-width: 100%;
+  }
+  .facade-img {
+    width: 100%;
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 992px) {
